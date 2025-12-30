@@ -20,6 +20,12 @@ services:
       # Do not edit the next line. If you want to change the media storage location on your system, edit the value of UPLOAD_LOCATION in the .env file
       - ${UPLOAD_LOCATION}:/usr/src/app/upload
       - /etc/localtime:/etc/localtime:ro
+      - /home/murali/data00/footage_converted/2019:/mnt/media/2019:ro
+      - /home/murali/data00/footage_converted/2020:/mnt/media/2020:ro
+      - /home/murali/data00/footage_converted/2021:/mnt/media/2021:ro
+      - /home/murali/data00/footage_converted/2022:/mnt/media/2022:ro
+      - /home/murali/data00/footage_converted/2023:/mnt/media/2023:ro
+      - /home/murali/data00/footage_converted/2024:/mnt/media/2024:ro
     env_file:
       - .env
     ports:
